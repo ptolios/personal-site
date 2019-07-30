@@ -24,6 +24,18 @@ html {
   background-color: rgba(75, 106, 131, 0.9);
 }
 
+.intro h1 {
+  font-size: 8vh;
+}
+
+.intro h2 {
+  font-size: 4.8vh;
+}
+
+.intro h3 {
+  font-size: 3.5vh;
+}
+
 .avatar {
   display: inline-block;
   height: 35px;
