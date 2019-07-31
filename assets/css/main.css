@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: Leto, Arial, Helvetica, sans-serif
+}
+
 .push-below {
   padding-top: 56px;
 }
@@ -11,7 +15,7 @@ html {
   align-items: center;
   padding-top: 10vh;
   background: url('/assets/img/software-computer-code-1940x900_35196.jpg') no-repeat center center / cover fixed;
-  height: calc(100vh - 56px);
+  height: 100vh;
   z-index: 3;
 }
 
@@ -22,18 +26,19 @@ html {
 
 .intro {
   background-color: rgba(75, 106, 131, 0.9);
+  text-shadow: 5px 5px 5px rgba(55, 55, 55, 0.75)
 }
 
 .intro h1 {
-  font-size: 8vh;
+  font-size: max(8vh, 50px, 5em);
 }
 
 .intro h2 {
-  font-size: 4.8vh;
+  font-size: max(4.8vh, 40px, 4em);
 }
 
 .intro h3 {
-  font-size: 3.5vh;
+  font-size: max(3.5vh, 30px, 3em);
 }
 
 .avatar {
