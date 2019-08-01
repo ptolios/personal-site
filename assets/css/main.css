@@ -30,15 +30,15 @@ body {
 }
 
 .intro h1 {
-  font-size: max(8vh, 50px, 5em);
+  font-size: max(10vw, 50px, 5em);
 }
 
 .intro h2 {
-  font-size: max(4.8vh, 40px, 4em);
+  font-size: max(8vw, 40px, 4em);
 }
 
 .intro h3 {
-  font-size: max(3.5vh, 30px, 3em);
+  font-size: max(6vw, 30px, 3em);
 }
 
 .avatar {
@@ -56,6 +56,17 @@ body {
   line-height: 20px;
   border: 1px solid;
   border-radius: 50%
+}
+
+.social-bar a:hover {
+  border-style: 1px hidden;
+  color: white;
+  background-color: #007BFF;
+}
+
+.social-bar a:active {
+  position: relative;
+  top: 2px;
 }
 
 .watermelon-gradient {
