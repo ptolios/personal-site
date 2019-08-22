@@ -197,3 +197,16 @@ ul.menu {
 .social-bar a:visited {
   color: initial;
 }
+
+:target {
+  display: block;
+  position: relative;
+  top: -127px; 
+  visibility: hidden;
+}
+
+.card {
+  margin-top: 5px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
