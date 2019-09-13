@@ -330,9 +330,14 @@ h3 {
   grid-template-columns: auto 1fr;
 }
 
-  padding-right: 10px;
+#hard-skills .skill {
+  justify-self: end;
+}
+
+#soft-skills .material-icons{
+  padding: 0 10px 0 40px;
   color: var(--primary-color);
-  font-size: 1em;
+  font-size: 1.3em;
   align-self: center;
 }
 
