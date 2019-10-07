@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Panos Tolios - Personal Page</title>
   <!-- Google Fonts -->
@@ -37,6 +37,9 @@
 
     <nav class="navbar">
       <ul class="menu">
+        <li id="home-link" class="faded-border-right menu-item link upcase">
+          <a href="#home"><i class="icon material-icons">keyboard_arrow_up</i></a>
+        </li>
         <li class="faded-border-right menu-item link upcase">
           <a href="#about"><i class="icon material-icons">info</i>About</a>
         </li>
@@ -58,6 +61,7 @@
 
   <main class="container">
     <section class="intro-wrapper">
+      <a id="home"></a>
       <div class="back-img">
         <div class="intro">
           <h3>Hi! My name is</h3>
@@ -115,161 +119,166 @@
       </footer>
     </section>
 
-    <section class="card">
-      <a id="about"></a>
-      <div class="card-title faded-border-bottom">
-        <h1>About Me</h1>
-        <i class="material-icons">person</i>
-      </div>
-      <div class="card-content">
-        <h4>Hello! I am Panos Tolios.</h4>
-        <p>An autodidact full-stack developer with a background in engineering. I have always had a
-          passion for coding and now I am considering a career change, upgrading my professional experience in software
-          development.</p>
-        <p>
-          I am searching for an opportunity to apply my skills and learn exciting new things!
-          I really look forward to working in a team and build beautiful applications!
-        </p>
-        <p>
-          My motivation derives from my desire to create things that help people live a better life,
-          make things easier for them and that fulfill some need.
-        </p>
-        <p class="link">
-          <!-- Feel free to see what <a href="#skills"><strong>I can do</strong></a> and <a href="#experience"><strong>what I
-              have done!</strong></a>
-        </p> -->
-      </div>
-    </section>
-
-    <section class="card">
-      <a id="skills"></a>
-      <div class="card-title faded-border-bottom">
-        <h1>My Skills</h1>
-      </div>
-      <div id="skillset" class="card-content">
-
-        <div id="hard-skills" class="card-section">
-          <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Hard</i> Skillset</h2>
-          <div class="skill">Python</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 90%;"></div>
-          </div>
-          <div class="skill">HTML</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 68%;"></div>
-          </div>
-          <div class="skill">CSS</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 66%;"></div>
-          </div>
-          <div class="skill">Javascript</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 64%;"></div>
-          </div>
-          <div class="skill">Vue.js</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 50%;"></div>
-          </div>
-          <div class="skill">git</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 60%;"></div>
-          </div>
-          <div class="skill">Docker</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 60%;"></div>
-          </div>
-          <div class="skill">Django</div>
-          <div class="progress-bar bg-grey">
-            <div class="percentage bg-green" style="--width: 80%;"></div>
-          </div>
+    <div class="main-content">
+      <section class="card active">
+        <a id="about"></a>
+        <div class="card-title faded-border-bottom">
+          <h1>About Me</h1>
+          <i class="material-icons">person</i>
         </div>
-
-        <div id="soft-skills" class="card-section">
-          <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Soft</i> Skillset</h2>
-          <i class="material-icons">check</i>
-          <div class="skill">Self-motivation</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Leadership</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Organizational skills</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Analytical skills</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Problem solving</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Communication</div>
-          <i class="material-icons">check</i>
-          <div class="skill">Team player</div>
+        <div class="card-content">
+          <h4>Hello! I am Panos Tolios.</h4>
+          <p>An autodidact full-stack developer with a background in engineering. I have always had a
+            passion for coding and now I am considering a career change, upgrading my professional experience in
+            software
+            development.</p>
+          <p>
+            I am searching for an opportunity to apply my skills and learn exciting new things!
+            I really look forward to working in a team and build beautiful applications!
+          </p>
+          <p>
+            My motivation derives from my desire to create things that help people live a better life,
+            make things easier for them and that fulfill some need.
+          </p>
+          <!--<p class="link">
+             Feel free to see what <a href="#skills"><strong>I can do</strong></a> and <a href="#experience"><strong>what I
+                have done!</strong></a>
+          </p> -->
         </div>
-    </section>
+      </section>
 
-    <section class="card">
-      <a id="experience"></a>
-      <div class="card-title faded-border-bottom">
-        <h1>Experience</h1>
-      </div>
-      <div class="card-content">
-        <div class="card-section">
-          <h2 class="content-title faded-border-bottom">Work Experience</h2>
+      <section class="card">
+        <a id="skills"></a>
+        <div class="card-title faded-border-bottom">
+          <h1>My Skills</h1>
         </div>
-        <div class="card-section">
-          <h2 class="content-title faded-border-bottom">Portfolio</h2>
-        </div>
-      </div>
-    </section>
+        <div id="skillset" class="card-content">
 
-    <section class="card">
-      <a id="education"></a>
-      <div class="card-title faded-border-bottom">
-        <h1>Education</h1>
-      </div>
-      <h2 class="content-title" style="margin: 50px 0 0 20px;">Under Construction</h2>
-      <div class="card-content">
-
-      </div>
-    </section>
-
-    <section class="card">
-      <a id="contact"></a>
-      <div class="card-title faded-border-bottom">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="card-content">
-        <!-- <h2 class="content-title faded-border-bottom">Contact Form</h2> -->
-        <h2 class="content-title" style="margin: 20px 0 0 0px;">Via form</h2>
-
-        <div class="contact-form">
-          <!-- External form data management service Jotform -->
-          <script type="text/javascript" src="https://form.jotformeu.com/jsform/92462210445349"></script>
-        </div>
-
-        <h2 class="content-title" style="margin-top: 20px;">Or Via</h2>
-        <dl>
-          <dt>Email</dt>
-          <dd>
-            <span class="link underline-text">
-              <a href="mailto:panostolios@gmail.com">panostolios@gmail.com</a>
-            </span>
-          </dd>
-          <dt>Phone Number</dt>
-          <dd>
-            <div class="link underline-text">
-              <a href="tel:+306948003691">(+30) 694-800-3691</a>
+          <div id="hard-skills" class="card-section">
+            <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Hard</i> Skillset</h2>
+            <div class="skill">Python</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 90%;"></div>
             </div>
-          </dd>
-          <dt>Residence</dt>
-          <dd>
-            <div class="link underline-text">
-              <a href="https://goo.gl/maps/iCv9RPtPmPDvjfyt6" target="_blank">Kavala, Greece</a>
+            <div class="skill">HTML</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 68%;"></div>
             </div>
-            <!-- <iframe
+            <div class="skill">CSS</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 66%;"></div>
+            </div>
+            <div class="skill">Javascript</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 64%;"></div>
+            </div>
+            <div class="skill">Vue.js</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 50%;"></div>
+            </div>
+            <div class="skill">git</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 60%;"></div>
+            </div>
+            <div class="skill">Docker</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 60%;"></div>
+            </div>
+            <div class="skill">Django</div>
+            <div class="progress-bar bg-grey">
+              <div class="percentage bg-green" style="--width: 80%;"></div>
+            </div>
+          </div>
+
+          <div id="soft-skills" class="card-section">
+            <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Soft</i> Skillset</h2>
+            <i class="material-icons">check</i>
+            <div class="skill">Self-motivation</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Leadership</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Organizational skills</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Analytical skills</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Problem solving</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Communication</div>
+            <i class="material-icons">check</i>
+            <div class="skill">Team player</div>
+          </div>
+      </section>
+
+      <section class="card">
+        <a id="experience"></a>
+        <div class="card-title faded-border-bottom">
+          <h1>Experience</h1>
+        </div>
+        <div class="card-content">
+          <div class="card-section">
+            <h2 class="content-title faded-border-bottom">Work Experience</h2>
+          </div>
+          <div class="card-section">
+            <h2 class="content-title faded-border-bottom">Portfolio</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <a id="education"></a>
+        <div class="card-title faded-border-bottom">
+          <h1>Education</h1>
+        </div>
+        <h2 class="content-title" style="margin: 50px 0 0 20px;">Under Construction</h2>
+        <div class="card-content">
+
+        </div>
+      </section>
+
+      <section class="card">
+        <a id="contact"></a>
+        <div class="card-title faded-border-bottom">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="card-content">
+          <!-- <h2 class="content-title faded-border-bottom">Contact Form</h2> -->
+          <h2 class="content-title" style="margin: 20px 0 0 0px;">Via form</h2>
+
+          <div class="contact-form">
+            <!-- External form data management service Jotform -->
+            <script type="text/javascript" src="https://form.jotformeu.com/jsform/92462210445349"></script>
+          </div>
+
+          <h2 class="content-title" style="margin-top: 20px;">Or Via</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd>
+              <span class="link underline-text">
+                <a href="mailto:panostolios@gmail.com">panostolios@gmail.com</a>
+              </span>
+            </dd>
+            <dt>Phone Number</dt>
+            <dd>
+              <div class="link underline-text">
+                <a href="tel:+306948003691">(+30) 694-800-3691</a>
+              </div>
+            </dd>
+            <dt>Residence</dt>
+            <dd>
+              <div class="link underline-text">
+                <a href="https://goo.gl/maps/iCv9RPtPmPDvjfyt6" target="_blank">Kavala, Greece</a>
+              </div>
+              <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48224.572891242526!2d24.37255270948645!3d40.93688245271866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aebb729066fc01%3A0xf567e137446a476c!2sKavala!5e0!3m2!1sen!2sgr!4v1567547085492!5m2!1sen!2sgr"
               width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
-          </dd>
-        </dl>
-      </div>
-    </section>
+            </dd>
+          </dl>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

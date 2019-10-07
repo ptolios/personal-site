@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #78CC6D;
-  --secondary-color: #E8920C;
-  --small-screen: 600px;
+  --primary-color: #78cc6d;
+  --secondary-color: #e8920c;
+  --small-screen: 576px;
   --medium-screen: 992px;
   --large-screen: 1200px;
 }
@@ -15,25 +15,30 @@ body {
   /* font-family: Poppins, Arial, Helvetica, sans-serif; */
   margin: 0;
   color: #444444;
-  background: linear-gradient(155deg, #50A3A2 0.7%, #78CC6D 100%);
+  background: linear-gradient(155deg, #50a3a2 0.7%, #78cc6d 100%);
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "header"
+    "main";
+  grid-template-rows: 130px auto;
 }
 
 .header {
+  grid-area: header;
   width: 100vw;
   max-width: 100%;
   position: fixed;
   z-index: 100;
   top: 0;
   background: #ffffff;
-  box-shadow: 0 4px 3px rgba(0,0,0,.5);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   justify-self: center;
 }
 
 .container {
+  grid-area: main;
   /* max-width: 400px; */
   justify-self: center;
 }
@@ -59,7 +64,6 @@ body {
   margin-left: -25%;
   height: 100%;
   width: auto;
-
 }
 
 .description {
@@ -119,6 +123,11 @@ ul.menu {
   list-style: none;
 }
 
+#home-link {
+  display: none;
+  flex: 1;
+}
+
 .link a {
   text-decoration: none;
   color: inherit;
@@ -156,9 +165,9 @@ ul.menu {
 }
 
 .intro-wrapper {
-  position: relative;
-  height: 100vh;
+  height: calc(100vh - 130px);
   border-radius: 0 0 8px 8px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
@@ -168,7 +177,7 @@ ul.menu {
   padding: 3px;
   background-color: rgba(91, 91, 91, 0.9);
   color: #ffffff;
-  text-shadow: rgba(0, 0, 0, .75) 4px 4px 2px;
+  text-shadow: rgba(0, 0, 0, 0.75) 4px 4px 2px;
 }
 
 .intro h1,
@@ -195,7 +204,7 @@ h3 {
 .back-img {
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: url('/assets/img/python-code.jpeg');
+  background-image: url("/assets/img/python-code.jpeg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -219,13 +228,13 @@ h3 {
   text-align: center;
   line-height: 20px;
   font-size: 1.25em;
-  border: 1px solid #1DB6D0;
+  border: 1px solid #1db6d0;
   border-radius: 50%;
 }
 
 .svg-icon {
   box-shadow: 4px 4px 8px #000000;
-  fill: #1DB6D0;
+  fill: #1db6d0;
   /* background-color: #042d85; */
   background-color: transparent;
   border-color: transparent;
@@ -259,8 +268,8 @@ h3 {
 }
 
 .intro-footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 60px;
   height: 60px;
   background-color: #ffffff;
   border-radius: 0 0 8px 8px;
@@ -330,7 +339,8 @@ h3 {
   flex-direction: column;
 }
 
-#hard-skills, #soft-skills {
+#hard-skills,
+#soft-skills {
   display: grid;
   grid-template-columns: auto 1fr;
   max-width: 80%;
@@ -340,7 +350,7 @@ h3 {
   justify-self: end;
 }
 
-#soft-skills .material-icons{
+#soft-skills .material-icons {
   /* TODO: align this with the above */
   padding: 0 10px 0 10px;
   color: var(--primary-color);
@@ -357,10 +367,10 @@ h3 {
 }
 
 .bg-grey {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
-.card-section{
+.card-section {
   margin: 35px 20px 0 0;
 }
 
@@ -409,6 +419,7 @@ h3 {
   .header {
     max-width: 80%;
     margin: auto;
+    left: 10%;
   }
 
   .container {
@@ -419,6 +430,7 @@ h3 {
 @media (min-width: 768px) {
   body {
     position: relative;
+    grid-template-areas: "header main";
     grid-template-rows: none;
     grid-template-columns: 20% auto;
     align-items: start;
@@ -426,19 +438,25 @@ h3 {
   }
 
   .header {
+    grid-area: header;
     margin: 0px;
     width: auto;
-    position: sticky; 
+    position: sticky;
     top: 12px;
     justify-self: end;
   }
 
-  .profile, .faded-border-top {
+  .profile,
+  .faded-border-top {
     display: none;
   }
 
   .navbar .menu {
     flex-direction: column;
+  }
+
+  #home-link {
+    display: flex;
   }
 
   .menu-item {
@@ -450,23 +468,25 @@ h3 {
     margin-right: 5%;
     max-width: 580px;
     justify-self: start;
+    grid-area: main;
   }
 
   .intro-wrapper {
-    height: 90vh;
+    height: 600px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-  
-  .header, .intro-wrapper {
+
+  .header,
+  .intro-wrapper {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-  
-  .card{
+
+  .card {
     min-height: 50vh;
   }
-  
+
   :target {
     top: -12px;
     visibility: hidden;
@@ -476,7 +496,8 @@ h3 {
     flex-direction: row;
   }
 
-  #hard-skills, #soft-skills {
+  #hard-skills,
+  #soft-skills {
     flex: 1;
   }
 
@@ -485,21 +506,69 @@ h3 {
   }
 
   .lg-faded-border-bottom {
-    border-image: linear-gradient(to right, white 10%, rgba(151, 151, 151, 0.9) 50%, white 90%) 1
+    border-image: linear-gradient(
+        to right,
+        white 10%,
+        rgba(151, 151, 151, 0.9) 50%,
+        white 90%
+      )
+      1;
   }
 }
 
-@media (min-width: 992px) {
-  /* #skillset {
-    flex-direction: row;
+@media (min-width: 1200px) {
+  body {
+    position: relative;
+    grid-template-columns: 120px auto;
+    align-items: center;
+  }
+  
+  .header {
+    position: unset;
   }
 
-  #hard-skills, #soft-skills {
-    flex: 1;
+  #home-link {
+    display: none;
   }
 
-  .content-title {
-    text-align: center;
-    border-bottom: none;
-  } */
+  .container {
+    margin-top: 0;
+    height: 100vh;
+    max-width: unset;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "intro main-content";
+    align-items: center;
+    justify-content: start;
+  }
+
+  .intro-wrapper {
+    width: 480px;
+    height: 674px;
+    min-height: 350px;
+    max-height: 90vh;
+    grid-area: intro;
+    z-index: 100;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-content {
+    grid-area: main-content;
+    margin-right: 20px;
+  }
+
+  .card {
+    display: none;
+    border-radius: 0 8px 8px 0;
+    height: 640px;
+    max-width: 640px;
+    min-height: 300px;
+    max-height: 80vh;
+    margin: 0;
+    overflow: auto;
+  }
+  
+  .active {
+    display: inherit;
+  }
 }
