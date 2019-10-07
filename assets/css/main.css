@@ -432,7 +432,7 @@ h3 {
     position: relative;
     grid-template-areas: "header main";
     grid-template-rows: none;
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto auto;
     align-items: start;
     grid-gap: 12px;
   }
