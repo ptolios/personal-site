@@ -432,7 +432,7 @@ h3 {
     position: relative;
     grid-template-areas: "header main";
     grid-template-rows: none;
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto auto;
     align-items: start;
     grid-gap: 12px;
   }
@@ -519,7 +519,6 @@ h3 {
 @media (min-width: 1200px) {
   body {
     position: relative;
-    grid-template-columns: 120px auto;
     align-items: center;
   }
   
@@ -561,7 +560,7 @@ h3 {
     display: none;
     border-radius: 0 8px 8px 0;
     height: 640px;
-    max-width: 640px;
+    max-width: 580px;
     min-height: 300px;
     max-height: 80vh;
     margin: 0;
