@@ -39,6 +39,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         section.classList.remove("active");
       }
     });
-    console.log(sectionId + " link pressed");
   }
 });
