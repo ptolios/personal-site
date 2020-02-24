@@ -132,7 +132,7 @@ ul.menu {
   color: inherit;
 }
 
-.link a:hover {
+.link a:hover, .menu-active {
   color: var(--primary-color);
 }
 
@@ -411,7 +411,8 @@ h3 {
 }
 
 .underline-text {
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .portfolio-item {

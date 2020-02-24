@@ -40,7 +40,7 @@
         <li id="home-link" class="faded-border-right menu-item link upcase">
           <a href="#home"><i class="icon material-icons">keyboard_arrow_up</i></a>
         </li>
-        <li class="faded-border-right menu-item link upcase">
+        <li class="faded-border-right menu-item menu-active link upcase">
           <a href="#about"><i class="icon material-icons">info</i>About</a>
         </li>
         <li class="faded-border-right menu-item link upcase">
@@ -68,7 +68,7 @@
           <h1>Panos Tolios</h1>
           <h2>I am a full-stack developer</h2>
           <div class="social-bar">
-            <a class="svg-icon" href="https://github.com/ptolios" target="_blank">
+            <a class="svg-icon" href="https://github.com/ptolios">
               <!-- <img height="20" width="20" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" /> -->
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub icon</title>
@@ -76,7 +76,7 @@
                   d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
             </a>
-            <a class="svg-icon" href="https://bitbucket.org/ptolios" target="_blank">
+            <a class="svg-icon" href="https://bitbucket.org/ptolios">
               <!-- <img height="20" width="20" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bitbucket.svg" /> -->
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Bitbucket icon</title>
@@ -84,7 +84,7 @@
                   d="M.778 1.211c-.424-.006-.772.334-.778.758 0 .045.002.09.01.134l3.263 19.811c.084.499.515.867 1.022.872H19.95c.382.004.708-.271.77-.646l3.27-20.03c.068-.418-.216-.813-.635-.881-.045-.008-.089-.011-.133-.01L.778 1.211zM14.52 15.528H9.522L8.17 8.464h7.561l-1.211 7.064z" />
               </svg>
             </a>
-            <a class="svg-icon" href="https://gitlab.com/panostolios" target="_blank">
+            <a class="svg-icon" href="https://gitlab.com/panostolios">
               <!-- <img height="20" width="20" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gitlab.svg" /> -->
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitLab icon</title>
@@ -92,7 +92,7 @@
                   d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024" />
               </svg>
             </a>
-            <a class="svg-icon" href="https://www.linkedin.com/in/panos-tolios-0b61b638" target="_blank">
+            <a class="svg-icon" href="https://www.linkedin.com/in/panos-tolios-0b61b638">
               <!-- <img height="20" width="20" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" /> -->
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>LinkedIn icon</title>
@@ -105,13 +105,13 @@
       </div>
       <footer class="intro-footer">
         <div class="card-action link upcase faded-border-right" style="color: #E8920C;">
-          <a href="/assets/cv/test.pdf" target="_blank">
+          <a href="/assets/cv/test.pdf">
             <span>Download CV</span>
             <i class="material-icons">cloud_download</i>
           </a>
         </div>
         <div class="card-action link upcase" style="color: #E8920C;">
-          <a href="#contact">
+          <a href="#contact" onclick="showSection('#contact')">
             <span>Contact Me</span>
             <i class="material-icons">send</i>
           </a>
@@ -155,7 +155,9 @@
         <div id="skillset" class="card-content">
 
           <div id="hard-skills" class="card-section">
-            <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Hard</i> Skillset</h2>
+            <h2 class="content-title faded-border-bottom lg-faded-border-bottom">
+              <i>Hard</i> Skillset
+            </h2>
             <div class="skill">Python</div>
             <div class="progress-bar bg-grey">
               <div class="percentage bg-green" style="--width: 90%;"></div>
@@ -191,7 +193,9 @@
           </div>
 
           <div id="soft-skills" class="card-section">
-            <h2 class="content-title faded-border-bottom lg-faded-border-bottom"><i>Soft</i> Skillset</h2>
+            <h2 class="content-title faded-border-bottom lg-faded-border-bottom">
+              <i>Soft</i> Skillset
+            </h2>
             <i class="material-icons">check</i>
             <div class="skill">Self-motivation</div>
             <i class="material-icons">check</i>
@@ -217,11 +221,24 @@
         <div class="card-content">
           <div class="card-section">
             <h2 class="content-title faded-border-bottom">Work Experience</h2>
+            <p>
+              I have been working as an engineer since 2003, accumulating
+              <span class="link underline-text">
+                <a href="#skills" onclick="showSection('#skills')">skills</a>
+              </span>
+              that proved to be very helpful in developing better software applications, but I
+              haven't had the opportunity yet to apply those skills in a professional environment.
+            </p>
+            <p>If you want to see my work experience as an engineer, visit my 
+              <span class="link underline-text">
+                <a href="https://www.linkedin.com/in/panos-tolios-0b61b638">LinkedIn profile.</a>
+              </span>
+            </p>
           </div>
           <div class="card-section">
             <h2 class="content-title faded-border-bottom">Portfolio</h2>
             <div class="portfolio-item">
-              <a href="https://what-will-i-cook-today.netlify.com/" target="_blank">
+              <a href="https://what-will-i-cook-today.netlify.com/">
                 <img src="assets/img/portfolio/Portfolio_What-will-I-cook-today.jpg">
               </a>
             </div>
@@ -234,9 +251,18 @@
         <div class="card-title faded-border-bottom">
           <h1>Education</h1>
         </div>
-        <h2 class="content-title" style="margin: 50px 0 0 20px;">Under Construction</h2>
+        <!-- <h2 class="content-title" style="margin: 50px 0 0 20px;">Under Construction</h2> -->
         <div class="card-content">
-
+          <div class="education-entry faded-border-bottom">
+            <h3 class="period">1997-2003</h3>
+            <h4 class="institute">Aristotle University of Thessaloniki, Greece</h4>
+            <p class="degree">Master of Engineering in Surveying Engineering</p>
+          </div>
+          <div class="education-entry">
+            <h3 class="period">2011-2014</h3>
+            <h4 class="institute">University of Macedonia, Greece</h4>
+            <p class="degree">Master of Business Administration</p>
+          </div>
         </div>
       </section>
 
@@ -258,20 +284,20 @@
           <dl>
             <dt>Email</dt>
             <dd>
-              <span class="link underline-text">
-                <a href="mailto:panostolios@gmail.com">panostolios@gmail.com</a>
+              <span class="link">
+                <a class="underline-text" href="mailto:panostolios@gmail.com">panostolios@gmail.com</a>
               </span>
             </dd>
             <dt>Phone Number</dt>
             <dd>
-              <div class="link underline-text">
-                <a href="tel:+306948003691">(+30) 694-800-3691</a>
+              <div class="link">
+                <a class="underline-text" href="tel:+306948003691">(+30) 694-800-3691</a>
               </div>
             </dd>
             <dt>Residence</dt>
             <dd>
-              <div class="link underline-text">
-                <a href="https://goo.gl/maps/iCv9RPtPmPDvjfyt6" target="_blank">Kavala, Greece</a>
+              <div class="link">
+                <a class="underline-text" href="https://goo.gl/maps/iCv9RPtPmPDvjfyt6">Kavala, Greece</a>
               </div>
               <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48224.572891242526!2d24.37255270948645!3d40.93688245271866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aebb729066fc01%3A0xf567e137446a476c!2sKavala!5e0!3m2!1sen!2sgr!4v1567547085492!5m2!1sen!2sgr"
