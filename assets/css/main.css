@@ -17,7 +17,7 @@ body {
   color: #444444;
   background: linear-gradient(155deg, #50a3a2 0.7%, #78cc6d 100%);
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
     "main";
   grid-template-rows: 130px auto;
@@ -132,7 +132,7 @@ ul.menu {
   color: inherit;
 }
 
-.link a:hover {
+.link a:hover, .menu-active {
   color: var(--primary-color);
 }
 
@@ -406,12 +406,66 @@ h3 {
   width: var(--width);
 }
 
-.contact-form {
+.contact-form-container {
+  background-color: rgb(235, 235, 235);
   margin-top: 20px;
+  border-radius: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-form * {
+  margin: 0.6em 1.2em;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input, textarea {
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 8px;
+  border: solid 1px #ccc
+}
+.contact-form textarea {
+  padding: 1em;
+}
+
+.contact-form input[type=submit] {
+  align-self: stretch;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: var(--secondary-color);
 }
 
 .underline-text {
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.portfolio-item {
+  width: 300px;
+  object-fit: scale-down;
+}
+
+.portfolio-item img {
+  width: 50%;
+  background: var(--primary-color);
+}
+
+.portfolio-item img:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 576px) {
@@ -520,7 +574,7 @@ h3 {
     position: relative;
     align-items: center;
   }
-  
+
   .header {
     position: unset;
   }
@@ -559,13 +613,13 @@ h3 {
     display: none;
     border-radius: 0 8px 8px 0;
     height: 640px;
-    max-width: 580px;
+    width: 580px;
     min-height: 300px;
     max-height: 80vh;
     margin: 0;
     overflow: auto;
   }
-  
+
   .active {
     display: inherit;
   }
